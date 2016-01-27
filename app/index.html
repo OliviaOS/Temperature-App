@@ -1,0 +1,44 @@
+<!doctype html>
+<html ng-app="myApp">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Temperature Moniter</title>
+        <link rel="stylesheet" href="css/bootstrap/css/bootstrap.css"/>
+        <link rel="stylesheet" href="css/app.css"/>
+    </head>
+    <body>
+        <!--header-->
+        <nav class="navbar navbar-fixed-top navbar-inverse">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#"><b>Temperature Moniter App</b> </a>
+            </div>
+            <div class="collapse navbar-collapse navbar-main-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#/favorites">My forecast</a></li>
+                    <li class=""><a href="#/search"><span class="label label-primary"><span class="glyphicon glyphicon-search"></span>  Search other City </span></a></li>
+                </ul>
+            </div>
+        </nav>
+        <!--Partial-->
+        <div class="container">
+            <div ng-view></div>
+        </div>
+        <!--footer-->
+        <nav class="navbar navbar-inverse navbar-fixed-bottom">
+            <div class="container-fluid">
+                <p class="navbar-text"><small>Temperature Moniter, Javascript SPA application Olivia_Shui</small></p>
+            </div>
+        </nav>
+        <script src="lib/angular/angular.js"></script>
+        <script src="lib/angular/angular-route.js"></script>
+        <script src="lib/angular/angular-resource.js"></script>
+        <script src="lib/iso-3166-country-codes-angular/iso-3166-country-codes-angular.js"></script>
+        <script src="js/app.js"></script>
+        <script src="js/services.js"></script>
+        <script src="js/controllers.js"></script>
+        <script src="js/filters.js"></script>
+        <script src="js/directives.js"></script>
+    </body>
+</html>

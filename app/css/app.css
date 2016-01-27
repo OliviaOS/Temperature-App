@@ -1,0 +1,17 @@
+/* custom stylesheet */
+body {
+    padding-top: 80px;
+    padding-bottom: 180px;
+}
+
+
+.weather.panel .panel-heading {
+    font-weight: lighter !important;
+    font-size: 1.8em;
+}
+
+.weather.panel .panel-footer {
+    font-weight: lighter !important;
+    font-size: 0.9em;
+    background-color:ghostwhite;
+}
